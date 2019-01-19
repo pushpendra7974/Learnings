@@ -2,10 +2,10 @@ class Customer {
     CustomerId: number;
     CustomerName: string;
     CustomerBalance: number;
-    CustomerSpouse: string;
+    CustomerSpouse: string|null|undefined;
 
     //Constructor Overloading
-    constructor(customerid: number, customerName: string, customerBalance: number, customerSpouse?: string){
+    constructor(customerid: number, customerName: string, customerBalance: number, customerSpouse?: string|null|undefined){
         this.CustomerId =customerid;
         this.CustomerName= customerName;
         this.CustomerBalance =customerBalance;
