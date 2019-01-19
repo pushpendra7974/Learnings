@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Passing Object As a Parameter - TypeScript
+        </title>
+        <script src="PassingObjectDemo.js"></script>
+    </head>
+    <body>
+        <script>
+            var a = new Address(100,"Dwarka Mor","Uttam Nagar","New Delhi","India");
+            var c = new Customer(1,"Pushpendra Singh", 10000,a);
+
+            console.log("Initial Information of Customer");
+            c.display();
+            console.log("Balance after depositing 5000");
+            console.log(c.deposit(5000));
+        </script>
+    </body>
+</html>
